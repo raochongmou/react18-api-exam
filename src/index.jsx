@@ -8,27 +8,28 @@ import ReactDOM from "react-dom/client";
 // import App from "./react之ref获取dom/App";
 // import App from "./react受控与非受控组件/App";
 // import App from "./react_craco-less-sass使用/App";
-import App from "./react-css-in-js/App";
+// import App from "./react-css-in-js/App";
 // import App from "./react高阶组件/App";
 // import App from "./react-portals-fragment/App";
+import App from "./react-cssModule/App";
 // import { StrictMode } from "react";
-import { ThemeProvider } from "styled-components";
+// import { ThemeProvider } from "styled-components";
 // import { ThemeContext } from "./react高阶组件/context/theme";
 
 const app = ReactDOM.createRoot(document.querySelector("#root"));
 
 app.render(
   // <StrictMode>
-  <ThemeProvider
-    theme={{ globalColor: "orange", globalWidth: 400, globalHeight: 400 }}
-  >
-    <App />
-  </ThemeProvider>
+  // <ThemeProvider
+  //   theme={{ globalColor: "orange", globalWidth: 400, globalHeight: 400 }}
+  // >
+  //   <App />
+  // </ThemeProvider>
   // {/* </StrictMode> */}
   // <ThemeContext.Provider value={{ color: "#ddd;", fontSize: 36 }}>
   //   <App />
   // </ThemeContext.Provider>
-  // <App />
+  <App />
 );
 
 // const name = "rao";
