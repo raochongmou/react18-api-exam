@@ -1,5 +1,5 @@
 import { Fragment, PureComponent } from "react";
-import { WrapperCss } from "./style.js";
+import { WrapperCss, RcmButton } from "./style.js";
 import Home from "./home";
 
 export class App extends PureComponent {
@@ -12,11 +12,8 @@ export class App extends PureComponent {
     };
   }
   render() {
-    const {
-      largeFs,
-      customColor
-      // customBorder
-    } = this.state;
+    const { largeFs, customColor } = this.state;
+    // const { largeFs, customColor, customBorder } = this.state;
     return (
       <Fragment>
         <WrapperCss
@@ -38,6 +35,7 @@ export class App extends PureComponent {
           </div>
         </WrapperCss>
         <Home />
+        <RcmButton>继承样式</RcmButton>
       </Fragment>
     );
   }

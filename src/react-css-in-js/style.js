@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+const Button = styled.button`
+  border: 10px solid #eff409;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+`;
+
+// 继承样式
+export const RcmButton = styled(Button)`
+  background-color: brown;
+  font-size: 20px;
+`;
+
 export const WrapperCss = styled.div.attrs({
   defaultBorder: props => props.customBorder || "10px solid purple"
 })`
